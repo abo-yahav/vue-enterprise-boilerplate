@@ -7,6 +7,14 @@ export default [
     component: () => lazyLoadView(import('@views/home.vue')),
   },
   {
+    path: '/playground',
+    name: 'playground',
+    component: () => lazyLoadView(import('@views/playgroundView.vue')),
+    meta: {
+      authRequired: true,
+    },
+  },
+  {
     path: '/login',
     name: 'login',
     component: () => lazyLoadView(import('@views/login.vue')),

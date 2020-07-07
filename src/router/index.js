@@ -4,6 +4,7 @@ import VueRouter from 'vue-router'
 import VueMeta from 'vue-meta'
 // Adds a loading bar at the top during page loads.
 import NProgress from 'nprogress/nprogress'
+
 import store from '@state/store'
 import routes from './routes'
 
