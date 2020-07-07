@@ -1,4 +1,7 @@
 import Vue from 'vue'
+import { MdTable, MdAvatar, MdContent, } from 'vue-material/dist/components'
+import 'vue-material/dist/vue-material.min.css'
+import 'vue-material/dist/theme/default.css'
 import VueRouter from 'vue-router'
 // https://github.com/declandewet/vue-meta
 import VueMeta from 'vue-meta'
@@ -7,6 +10,9 @@ import NProgress from 'nprogress/nprogress'
 import store from '@state/store'
 import routes from './routes'
 
+Vue.use(MdTable)
+Vue.use(MdAvatar)
+Vue.use(MdContent)
 Vue.use(VueRouter)
 Vue.use(VueMeta, {
   // The component option name that vue-meta looks for meta info on.
