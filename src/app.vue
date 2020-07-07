@@ -45,6 +45,7 @@ export default {
 
 body {
   background: $color-body-bg;
+  min-height: 100vh;
 }
 #app {
   @extend %typography-small;

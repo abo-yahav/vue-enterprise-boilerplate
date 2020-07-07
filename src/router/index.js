@@ -5,7 +5,11 @@ import VueMeta from 'vue-meta'
 // Adds a loading bar at the top during page loads.
 import NProgress from 'nprogress/nprogress'
 import store from '@state/store'
+import { Table } from 'buefy'
+import 'buefy/dist/buefy.css'
 import routes from './routes'
+
+Vue.use(Table)
 
 Vue.use(VueRouter)
 Vue.use(VueMeta, {
