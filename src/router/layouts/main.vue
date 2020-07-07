@@ -21,4 +21,10 @@ export default {
   max-width: $size-content-width-max;
   margin: 0 auto;
 }
+
+@media (max-width: 800px) {
+  .container {
+    max-width: 80%;
+  }
+}
 </style>
